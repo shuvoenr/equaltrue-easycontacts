@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+    <config>
+        <modules>
+            <Equaltrue_Easycontacts>
+                <version>0.1.0</version>
+            </Equaltrue_Easycontacts>
+        </modules>
+
+        <global>
+            <models>
+                <Equaltrue_Easycontacts>
+                    <class>Equaltrue_Easycontacts_Model</class>
+                </Equaltrue_Easycontacts>
+            </models>
+        </global>
+
+        <frontend>
+            <events>
+                <controller_action_predispatch_contacts_index_post>
+                    <observers>
+                        <Equaltrue_Easycontacts>
+                            <class>Equaltrue_Easycontacts/Observer</class>
+                            <method>indexPreDispatch</method>
+                        </Equaltrue_Easycontacts>
+                    </observers>
+                </controller_action_predispatch_contacts_index_post>
+            </events>
+        </frontend>
+
+    </config>
