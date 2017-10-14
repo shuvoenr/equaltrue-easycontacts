@@ -1,2 +1,2 @@
 # equaltrue-easycontacts
-Magento Contact Us viewer.
+Magento 1.9.x.x Contact Us viewer.
